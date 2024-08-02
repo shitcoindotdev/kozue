@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RotateOnHover.css */
+.rotating-element {
+	transition: transform 0.3s ease; /* Smooth transition */
+	cursor: pointer;
+}
+
+.rotating-element:hover {
+	transform: rotate(10deg); /* Rotate 10 degrees on hover */
+}
+
+/* CSS for a Shiba Inu fur color gradient */
+/* CSS for a Shiba Inu beige fur color gradient */
+body {
+	background: url('/bgmobile.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.shibfade {
+	background: linear-gradient(45deg, #fff5e192, #f7e0c694, #f2d2a996, #eecfa4);
+}
+.blossom {
+	position: fixed;
+	pointer-events: none;
+	top: -50px;
+	width: 42px;
+	height: 42px;
+	background-image: url('/blossompetal.webp'); /* Add your cherry blossom image here */
+	background-size: cover;
+	opacity: 1;
+	z-index: 0;
+	transition:
+		top 10s linear,
+		transform 10s linear,
+		opacity 10s linear;
+}
+
+.gradient-text {
+	background: linear-gradient(to top right, #ffb1bf, #eeeeee);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: calc(40px + (1 * 10vw));
+	background-clip: text;
+	text-fill-color: transparent;
+	z-index: 99;
+	display: inline-block; /* Ensure the element respects its own width */
+	-webkit-text-stroke: 1px white;
+}
+
+h2.gradient-text {
+	font-size: calc(20px + (1 * 3vw));
+}
+
+.fadeIn {
+	opacity: 0; /* Start hidden */
+	animation: fadeInUp2 0.69s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+.fadeInUp {
+	opacity: 0;
+	animation: fadeInUp 690ms 888ms ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(60px); /* Starts 20px below its normal position */
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0); /* Ends at its normal position */
+	}
+}
+
+@keyframes fadeInUp2 {
+	from {
+		opacity: 0;
+		transform: translateY(4px); /* Starts 20px below its normal position */
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0); /* Ends at its normal position */
+	}
+}
