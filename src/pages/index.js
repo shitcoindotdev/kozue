@@ -84,7 +84,9 @@ export default function Home() {
 					heights and to stay as one of Ethereums cutest Shiba-Inus
 				</p>
 			</div>
-
+			<div className="w-full px-4">
+				<Image className="w-full max-w-[800px] rounded-xl" src={kozuedm} />
+			</div>
 			<div className="flex w-full justify-center">
 				<InstaEmbed url={'https://www.instagram.com/p/CgtD6FHvMBm/?img_index=1'} />
 			</div>
