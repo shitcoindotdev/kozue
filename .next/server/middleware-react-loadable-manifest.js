@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"pages/index.js -> @/components/InstaEmbed\":{\"id\":\"pages/index.js -> @/components/InstaEmbed\",\"files\":[\"static/chunks/src_components_InstaEmbed_jsx.js\"]}}"

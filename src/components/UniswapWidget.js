@@ -1,12 +1,40 @@
-// components/UniswapWidget.js
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 const UniswapWidget = ({ contractAddress }) => {
-	const uniswapUrl = `https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=${contractAddress}&theme=light`
+	const [isInView, setIsInView] = useState(false)
+	const widgetRef = useRef(null)
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const entry = entries[0]
+				if (entry.isIntersecting) {
+					setIsInView(true)
+					observer.disconnect() // stop observing once it's in view
+				}
+			},
+			{ threshold: 0.5 }, // adjust this value as needed
+		)
+
+		if (widgetRef.current) {
+			observer.observe(widgetRef.current)
+		}
+
+		return () => {
+			if (observer && widgetRef.current) {
+				observer.unobserve(widgetRef.current)
+			}
+		}
+	}, [])
+
+	const uniswapUrl = isInView
+		? `https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=${isInView ? contractAddress : ''}&theme=light`
+		: ''
 
 	return (
 		<iframe
+			ref={widgetRef}
 			src={uniswapUrl}
 			height="660px"
 			width="100%"
