@@ -52,6 +52,15 @@ export default function Home() {
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue3} />
 				</div>
 			</div>
+			<Copyaddress className="text-black" contractAddress={'0xf8bef12b93d0b56e508efc1c4E5a056c2508e047'} />
+			<a
+				target="_blank"
+				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf8bef12b93d0b56e508efc1c4E5a056c2508e047"
+				className="rounded-xl bg-pink-400 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition duration-150 ease-in-out hover:scale-[1.025]"
+				rel="noopener noreferrer"
+			>
+				Buy some $Kozue!
+			</a>
 			<div className="mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
 				<p>
 					Kozue is the sister of Neiro, who got adopted by&nbsp;
@@ -75,15 +84,7 @@ export default function Home() {
 					heights and to stay as one of Ethereums cutest Shiba-Inus
 				</p>
 			</div>
-			<Copyaddress className="text-black" contractAddress={'0xf8bef12b93d0b56e508efc1c4E5a056c2508e047'} />
-			<a
-				target="_blank"
-				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf8bef12b93d0b56e508efc1c4E5a056c2508e047"
-				className="rounded-xl bg-pink-400 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition duration-150 ease-in-out hover:scale-[1.025]"
-				rel="noopener noreferrer"
-			>
-				Buy some $Kozue!
-			</a>
+
 			<div className="flex w-full justify-center">
 				<InstaEmbed url={'https://www.instagram.com/p/CgtD6FHvMBm/?img_index=1'} />
 			</div>
