@@ -84,7 +84,7 @@ export default function Home() {
 					heights and to stay as one of Ethereums cutest Shiba-Inus
 				</p>
 			</div>
-			<div className="w-full px-4">
+			<div className="flex w-full justify-center px-4">
 				<Image className="w-full max-w-[800px] rounded-xl" src={kozuedm} />
 			</div>
 			<div className="flex w-full justify-center">
