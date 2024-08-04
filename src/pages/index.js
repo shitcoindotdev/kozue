@@ -41,7 +41,7 @@ export default function Home() {
 			</div>
 			<CherryBlossoms />
 			<Image
-				className="fixed top-0 z-[-1] w-full -translate-y-1/4 opacity-50"
+				className="absolute top-0 z-[-1] w-full -translate-y-1/4 opacity-50"
 				src={CherryBlossomsTop}
 				width={1200}
 			/>
