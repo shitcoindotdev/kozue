@@ -37,8 +37,17 @@ const UniswapWidget = ({ contractAddress }) => {
 			ref={widgetRef}
 			src={uniswapUrl}
 			height="660px"
+			className="backdrop-blur-sm"
 			width="100%"
-			style={{ border: '0', margin: '0 auto', display: 'block', borderRadius: '10px', maxWidth: '500px' }}
+			style={{
+				border: '0',
+				margin: '0 auto',
+				display: 'block',
+				borderRadius: '10px',
+				opacity: 0.9,
+				maxWidth: '360px',
+				maxHeight: '360px',
+			}}
 			title="Uniswap Widget"
 		/>
 	)

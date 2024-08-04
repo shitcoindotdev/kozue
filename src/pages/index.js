@@ -33,39 +33,39 @@ export default function Home() {
 
 	return (
 		<main
-			className={`gradient-shiba-inu-beige relative z-10 flex min-h-dvh w-full flex-col items-center gap-10 overflow-x-hidden bg-black/40 pb-20 text-[20px] text-white sm:px-8 ${cherry.className}`}
+			className={`shiba-gradient relative z-10 flex min-h-dvh w-full flex-col items-center gap-10 overflow-x-hidden pb-20 text-[20px] text-white sm:px-8 ${cherry.className}`}
 		>
-			<div className="relative flex w-full justify-center">
+			<div className="fadeIn relative flex w-full justify-center">
 				<h1 className="gradient-text relative z-20 font-bold">$Kozue</h1>
 				<h2 className="gradient-text absolute -bottom-5 z-20 font-bold">Neiro's cute sister</h2>
 			</div>
 			<CherryBlossoms />
 			<Image
-				className="absolute top-0 z-[-1] w-full -translate-y-1/4 opacity-50"
+				className="absolute top-0 z-[-1] w-full -translate-y-1/4 opacity-60"
 				src={CherryBlossomsTop}
-				width={1200}
+				width={400}
 			/>
 			<div className="relative z-20 flex w-full justify-evenly sm:justify-center sm:gap-6">
-				<div className="w-[30vw] max-w-[420px] rounded-xl">
+				<div className="fadeIn w-[30vw] max-w-[420px] rounded-xl">
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue1} />
 				</div>
-				<div className="w-[30vw] max-w-[420px] rounded-xl">
+				<div className="fadeIn w-[30vw] max-w-[420px] rounded-xl">
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue2} />
 				</div>
-				<div className="w-[30vw] max-w-[420px] rounded-xl">
+				<div className="fadeIn w-[30vw] max-w-[420px] rounded-xl">
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue3} />
 				</div>
 			</div>
-			<Copyaddress className="text-black" contractAddress={'0xf8bef12b93d0b56e508efc1c4E5a056c2508e047'} />
+			<Copyaddress className="fadeIn text-black" contractAddress={'0xf8bef12b93d0b56e508efc1c4E5a056c2508e047'} />
 			<a
 				target="_blank"
 				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf8bef12b93d0b56e508efc1c4E5a056c2508e047"
-				className="rounded-xl bg-pink-400/85 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition-all duration-150 ease-in-out hover:scale-[1.025] hover:bg-pink-400"
+				className="fadeIn rounded-xl bg-pink-400/85 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition-all duration-150 ease-in-out hover:scale-[1.025] hover:bg-pink-400"
 				rel="noopener noreferrer"
 			>
 				Buy some $Kozue!
 			</a>
-			<div className="mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
+			<div className="fadeIn mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
 				<p>
 					Kozue is the sister of Neiro, who got adopted by&nbsp;
 					<a
