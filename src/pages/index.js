@@ -13,6 +13,7 @@ import { useEffect } from 'react'
 import CherryBlossoms from '@/components/CherryBlossoms'
 import CherryBlossomsTop from '/public/cherryblossoms.png'
 import UniswapWidget from '@/components/UniswapWidget'
+import Typewriter from '@/components/Typewriter'
 
 const InstaEmbed = dynamic(() => import('@/components/InstaEmbed'), {
 	ssr: false,
@@ -56,7 +57,20 @@ export default function Home() {
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue3} />
 				</div>
 			</div>
-			<Copyaddress className="fadeIn text-black" contractAddress={'0xf8bef12b93d0b56e508efc1c4E5a056c2508e047'} />
+			<div className="fadeIn relative flex w-full justify-center py-4">
+				<Copyaddress
+					className={'text-pink-400/50'}
+					contractAddress={'0xf8bef12b93d0b56e508efc1c4E5a056c2508e047'}
+				/>
+				<Typewriter
+					speed={50}
+					delay={1500}
+					className={
+						'opacity-8 absolute -bottom-2 text-[12px] font-bold text-pink-400/70 md:-bottom-4 md:text-[16px]'
+					}
+					text={'click to copy CA'}
+				/>
+			</div>
 			<a
 				target="_blank"
 				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf8bef12b93d0b56e508efc1c4E5a056c2508e047"
