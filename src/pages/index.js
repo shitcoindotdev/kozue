@@ -44,13 +44,13 @@ export default function Home() {
 			<Image className="fade absolute top-0 z-[-1] w-full -translate-y-1/4" src={CherryBlossomsTop} width={400} />
 			<div className="relative z-20 flex w-full justify-evenly sm:justify-center sm:gap-6">
 				<div className="fadeIn w-[30vw] max-w-[420px] rounded-xl">
-					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue1} />
+					<Image width={400} className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue1} />
 				</div>
 				<div className="fadeIn w-[30vw] max-w-[420px] rounded-xl">
-					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue2} />
+					<Image width={400} className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue2} />
 				</div>
 				<div className="fadeIn w-[30vw] max-w-[420px] rounded-xl">
-					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue3} />
+					<Image width={400} className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue3} />
 				</div>
 			</div>
 			<div className="fadeIn relative flex w-full justify-center py-4">
@@ -99,13 +99,13 @@ export default function Home() {
 				</p>
 			</div>
 			<div className="flex w-full justify-center px-4">
-				<Image className="w-full max-w-[800px] rounded-xl" src={kozuedm} />
+				<Image width={600} className="w-full max-w-[800px] rounded-xl" src={kozuedm} />
 			</div>
 			<div className="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:items-start md:gap-8">
 				<InstaEmbed url={'https://www.instagram.com/p/CgtD6FHvMBm/?img_index=1'} />
 				<UniswapWidget contractAddress="0xf8bef12b93d0b56e508efc1c4E5a056c2508e047" />
 			</div>
-			<Image className="h-auto w-[400px] max-w-[69%] rounded-lg shadow-lg" src={kozue4} />
+			<Image width={400} className="h-auto w-[400px] max-w-[69%] rounded-lg shadow-lg" src={kozue4} />
 
 			<p className="text-[16px] sm:text-[20px]">Stay up to date with $Kozue 🐕</p>
 			<Links
