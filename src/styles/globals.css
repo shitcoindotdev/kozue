@@ -59,6 +59,11 @@ h2.gradient-text {
 	animation: fadeInUp2 0.69s ease-in-out forwards; /* Apply fade-in animation */
 }
 
+.fade {
+	opacity: 0;
+	animation: fade 0.69s ease-in-out forwards;
+}
+
 .fadeInUp {
 	opacity: 0;
 	animation: fadeInUp 690ms 888ms ease-in-out forwards;
@@ -83,5 +88,14 @@ h2.gradient-text {
 	to {
 		opacity: 1;
 		transform: translateY(0); /* Ends at its normal position */
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0.6;
 	}
 }

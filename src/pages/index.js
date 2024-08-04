@@ -41,11 +41,7 @@ export default function Home() {
 				<h2 className="gradient-text absolute -bottom-5 z-20 font-bold">Neiro's cute sister</h2>
 			</div>
 			<CherryBlossoms />
-			<Image
-				className="absolute top-0 z-[-1] w-full -translate-y-1/4 opacity-60"
-				src={CherryBlossomsTop}
-				width={400}
-			/>
+			<Image className="fade absolute top-0 z-[-1] w-full -translate-y-1/4" src={CherryBlossomsTop} width={400} />
 			<div className="relative z-20 flex w-full justify-evenly sm:justify-center sm:gap-6">
 				<div className="fadeIn w-[30vw] max-w-[420px] rounded-xl">
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue1} />
