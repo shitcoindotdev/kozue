@@ -60,7 +60,7 @@ export default function Home() {
 			<a
 				target="_blank"
 				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf8bef12b93d0b56e508efc1c4E5a056c2508e047"
-				className="rounded-xl bg-pink-400 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition duration-150 ease-in-out hover:scale-[1.025]"
+				className="rounded-xl bg-pink-400/85 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition-all duration-150 ease-in-out hover:scale-[1.025] hover:bg-pink-400"
 				rel="noopener noreferrer"
 			>
 				Buy some $Kozue!
