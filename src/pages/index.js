@@ -105,10 +105,10 @@ export default function Home() {
 			<div className="flex w-full justify-center px-4">
 				<Image className="w-full max-w-[800px] rounded-xl" src={kozuedm} />
 			</div>
-			<div className="flex w-full justify-center">
+			<div className="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:items-start md:gap-8">
 				<InstaEmbed url={'https://www.instagram.com/p/CgtD6FHvMBm/?img_index=1'} />
+				<UniswapWidget contractAddress="0xf8bef12b93d0b56e508efc1c4E5a056c2508e047" />
 			</div>
-			<UniswapWidget contractAddress="0xf8bef12b93d0b56e508efc1c4E5a056c2508e047" />
 			<Image className="h-auto w-[400px] max-w-[69%] rounded-lg shadow-lg" src={kozue4} />
 
 			<p className="text-[16px] sm:text-[20px]">Stay up to date with $Kozue 🐕</p>

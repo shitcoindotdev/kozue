@@ -41,12 +41,12 @@ const UniswapWidget = ({ contractAddress }) => {
 			width="100%"
 			style={{
 				border: '0',
-				margin: '0 auto',
+				margin: '0',
 				display: 'block',
 				borderRadius: '10px',
 				opacity: 0.9,
-				maxWidth: '360px',
-				maxHeight: '360px',
+				width: '326px',
+				maxHeight: '532px',
 			}}
 			title="Uniswap Widget"
 		/>

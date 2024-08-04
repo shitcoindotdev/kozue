@@ -18,7 +18,7 @@ const InstaEmbed = ({ url }) => {
 	}, [url])
 
 	return (
-		<div ref={embedContainer} className="my-4">
+		<div ref={embedContainer}>
 			<blockquote
 				className="instagram-media"
 				data-instgrm-permalink={url}
@@ -26,10 +26,7 @@ const InstaEmbed = ({ url }) => {
 				style={{
 					background: '#FFF',
 					boxShadow: '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)',
-					margin: '1px',
-					maxWidth: '540px',
-					minWidth: '326px',
-					padding: '0',
+					width: '326px',
 					width: '99.375%',
 					width: '-webkit-calc(100% - 2px)',
 					width: 'calc(100% - 2px)',
