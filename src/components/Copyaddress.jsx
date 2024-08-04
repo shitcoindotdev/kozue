@@ -55,7 +55,7 @@ function CopyAddress({ contractAddress, className }) {
 			<span className="text-[12px] sm:text-[20px]">{contractAddress}</span>
 			{showToast && (
 				<div className="absolute -top-8 flex items-center justify-center rounded bg-pink-300/70 px-2 py-1 text-xs text-white">
-					Address copied!
+					Address copied! 🩷
 				</div>
 			)}
 		</div>
