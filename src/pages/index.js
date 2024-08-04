@@ -34,7 +34,7 @@ export default function Home() {
 
 	return (
 		<main
-			className={`shiba-gradient relative z-10 flex min-h-dvh w-full flex-col items-center gap-10 overflow-x-hidden pb-20 text-[20px] text-white sm:px-8 ${cherry.className}`}
+			className={`shiba-gradient relative z-10 flex min-h-dvh w-full flex-col items-center gap-10 overflow-x-hidden pb-20 text-[20px] text-black/60 sm:px-8 ${cherry.className}`}
 		>
 			<div className="fadeIn relative flex w-full justify-center">
 				<h1 className="gradient-text relative z-20 font-bold">$Kozue</h1>
