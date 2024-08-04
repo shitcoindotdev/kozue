@@ -40,15 +40,19 @@ export default function Home() {
 				<h2 className="gradient-text absolute -bottom-5 z-20 font-bold">Neiro's cute sister</h2>
 			</div>
 			<CherryBlossoms />
-			<Image className="fixed top-0 z-[-1] w-full -translate-y-1/4" src={CherryBlossomsTop} width={1200} />
+			<Image
+				className="fixed top-0 z-[-1] w-full -translate-y-1/4 opacity-50"
+				src={CherryBlossomsTop}
+				width={1200}
+			/>
 			<div className="relative z-20 flex w-full justify-evenly sm:justify-center sm:gap-6">
-				<div className="w-[140px] rounded-xl sm:w-[260px]">
+				<div className="w-[30vw] max-w-[420px] rounded-xl">
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue1} />
 				</div>
-				<div className="w-[140px] rounded-xl sm:w-[260px]">
+				<div className="w-[30vw] max-w-[420px] rounded-xl">
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue2} />
 				</div>
-				<div className="w-[140px] rounded-xl sm:w-[260px]">
+				<div className="w-[30vw] max-w-[420px] rounded-xl">
 					<Image className="rotating-element rounded-xl shadow-xl md:w-full" src={kozue3} />
 				</div>
 			</div>
