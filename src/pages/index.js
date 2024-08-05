@@ -35,11 +35,11 @@ export default function Home() {
 
 	return (
 		<main
-			className={`shiba-gradient relative z-10 flex min-h-dvh w-full flex-col items-center gap-10 overflow-x-hidden pb-20 text-[20px] text-black/60 sm:px-8 ${cherry.className}`}
+			className={`relative z-10 flex min-h-dvh w-full flex-col items-center gap-10 overflow-x-hidden pb-20 text-[20px] text-black/60 sm:px-8 ${cherry.className}`}
 		>
 			<div className="fadeIn relative flex w-full justify-center">
-				<h1 className="gradient-text relative z-20 font-bold">$Kozue</h1>
-				<h2 className="gradient-text absolute -bottom-5 z-20 font-bold">Neiro's cute sister</h2>
+				<h1 className="gradient-text relative z-20 font-bold drop-shadow-md">$Kozue</h1>
+				<h2 className="gradient-text absolute -bottom-5 z-20 font-bold drop-shadow-md">Neiro's cute sister</h2>
 			</div>
 			<CherryBlossoms />
 			<Image className="fade absolute top-0 z-[-1] w-full -translate-y-1/4" src={CherryBlossomsTop} width={400} />
