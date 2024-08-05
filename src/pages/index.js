@@ -71,7 +71,7 @@ export default function Home() {
 			<a
 				target="_blank"
 				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf8bef12b93d0b56e508efc1c4E5a056c2508e047"
-				className="fadeIn flex gap-2 rounded-xl bg-pink-400/85 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition-all duration-150 ease-in-out hover:scale-[1.025] hover:bg-pink-400"
+				className="fadeIn flex gap-2 rounded-xl bg-pink-400/85 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition-all duration-200 ease-in-out hover:scale-[1.025] hover:bg-pink-400"
 				rel="noopener noreferrer"
 			>
 				Buy some $Kozue! <Image src={uniswap} />
@@ -100,7 +100,7 @@ export default function Home() {
 				</p>
 			</div>
 			<div className="flex w-full justify-center px-4">
-				<Image width={600} className="w-full max-w-[800px] rounded-xl" src={kozuedm} />
+				<Image width={600} className="w-full max-w-[800px] rounded-xl shadow-lg" src={kozuedm} />
 			</div>
 			<div className="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:items-start md:gap-8">
 				<InstaEmbed url={'https://www.instagram.com/p/CgtD6FHvMBm/?img_index=1'} />
