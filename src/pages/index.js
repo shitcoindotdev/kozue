@@ -14,6 +14,7 @@ import CherryBlossoms from '@/components/CherryBlossoms'
 import CherryBlossomsTop from '/public/cherryblossoms.png'
 import UniswapWidget from '@/components/UniswapWidget'
 import Typewriter from '@/components/Typewriter'
+import uniswap from '/public/uniswap.svg'
 
 const InstaEmbed = dynamic(() => import('@/components/InstaEmbed'), {
 	ssr: false,
@@ -70,10 +71,10 @@ export default function Home() {
 			<a
 				target="_blank"
 				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf8bef12b93d0b56e508efc1c4E5a056c2508e047"
-				className="fadeIn rounded-xl bg-pink-400/85 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition-all duration-150 ease-in-out hover:scale-[1.025] hover:bg-pink-400"
+				className="fadeIn flex gap-2 rounded-xl bg-pink-400/85 px-8 py-3 text-[20px] tracking-tight text-white shadow-lg backdrop-blur-sm transition-all duration-150 ease-in-out hover:scale-[1.025] hover:bg-pink-400"
 				rel="noopener noreferrer"
 			>
-				Buy some $Kozue!
+				Buy some $Kozue! <Image src={uniswap} />
 			</a>
 			<div className="fadeIn mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
 				<p>
